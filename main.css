@@ -51,14 +51,14 @@
     padding:8px;
 }.side-menu{
     position: fixed;
-    background: #4B7BE5;
+    background: rgb(137, 72, 125);
     width:20vw;
     min-height:100vh;
     display:flex;
     flex-direction: column;
 }.side-menu-2{
     position: fixed;
-    background: #826F66;
+    background: #4B7BE5;
     width:20vw;
     min-height:100vh;
     display:flex;
@@ -83,16 +83,16 @@
 
 }.side-menu li:hover{
     background: whitesmoke;
-    color: #4B7BE5;
+    color: rgb(137, 72, 125);;
 }.side-menu-2 li:hover{
     background: whitesmoke;
-    color: #826F66;
+    color: #4B7BE5;
 }.side-menu li a:hover{
     background: whitesmoke;
-    color: #4B7BE5;
+    color: rgb(137, 72, 125);;
 }.side-menu-2 li a:hover{
     background: whitesmoke;
-    color: #826F66;
+    color: #4B7BE5;
 }
 .container{
     position: absolute;
