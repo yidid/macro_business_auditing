@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="side-menu-2">
+        <div class="brand-name-2">
+            <h1>User</h1>
+        </div>
+        <ul>
+            <li><i class="fa fa-dashboard" aria-hidden="true">&nbsp</i> <a href="#"> <span> Dashboard</span></a>  </li>
+            <li> <i class="fa fa-calendar" aria-hidden="true">&nbsp</i> <a href=""><span>Add Daily cost</span></a> </li>
+            <li> <i class="fa fa-book" aria-hidden="true"></i></i> <a href="/user-income.html"><span>Income</span></a> </li>
+            <li> <i class="fa fa-money" aria-hidden="true">&nbsp</i> <a href="/user-expense.html"><span>Expense</span></a> </li>
+            <li>  <i class="fa fa-newspaper-o" aria-hidden="true">&nbsp</i> <a href="/user-blog.html"><span>Blog</span> </a></li>
+            <li> <i class="fa fa-comment" aria-hidden="true">&nbsp</i>  <a href=" "><span> Add Feedback</span> </a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <div class="search">
+                    <input type="text" placeholder="search...">
+                    <button type="submit"> <i class="fa fa-search" aria-hidden="true"></i> </button>
+                </div>
+                <div class="user">
+                    <a href="#" class="btn-2"> <i class="fa fa-plus" aria-hidden="true">&nbsp add income</i></a>
+                    <i class="fa fa-bell" aria-hidden="true" style="color:#826F66;"></i>
+                    <div class="img-case">
+                        <img src="img/profile.png.jpg" alt="">
+
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+        <div class="content">
+           
+        
+  
+            <div class="content-3">
+                <div class="income-list">
+                    <div class="title">
+                        <h2 style="color:#4B7BE5">Your Expense list</h2><br>
+                       
+                        <a href="#" class="btn">View all</a>
+                    </div>
+                    <table>
+                        <tr>
+                      
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            
+                        </tr>
+                         <tr>
+                           
+                             <td><b>food</b> <br ><p style="color: grey;"> accpted</p> </td>
+                             <td>jun 7,2022</td>
+                             <td>$1234</td>
+                           
+                         </tr>
+                         <tr>
+                       
+                          <td><b>books</b><br><p style="color: grey;">the online </p></td>
+                          <td>jun 7,2022</td>
+                          <td>$56789</td>
+                          
+                      </tr>
+                      <tr>
+                      
+                          <td><b>class fee</b><br><p style="color: grey;">my new equb</p></td>
+                          <td>march 11,2022</td>
+                          <td>10000br</td>
+                         
+                      </tr>
+                    </table>
+                </div>
+  
+     
+      
+        <div class="pie-chart">
+            <div class="title">
+                <h2 style="color:#4B7BE5;">your expense chart</h2>
+                <a href="#" class="view all"></a>
+            </div>
+            <head>
+                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                <script type="text/javascript">
+                  google.charts.load("current", {packages:["corechart"]});
+                  google.charts.setOnLoadCallback(drawChart);
+                  function drawChart() {
+                    var data = google.visualization.arrayToDataTable([
+                      ['Task', 'Hours per Day'],
+                      ['employee fee',     11],
+                      ['house fee',      2],
+                      ['food',  2],
+                      ['school fee', 2],
+                      ['transport',    7]
+                    ]);
+            
+                    var options = {
+                   
+                      is3D: true,
+                    };
+            
+                    var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+                    chart.draw(data, options);
+                  }
+                </script>
+              </head>
+             
+                <div id="piechart_3d" style="width: 500px; height: 200px;"></div>
+             
+            
+      </div>
+      </div>
+
+        
+    </div>
+</body>
+</html>
